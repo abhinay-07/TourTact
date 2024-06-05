@@ -32,15 +32,15 @@ TourTuct is an innovative web application designed to streamline the travel plan
 
 ## Technologies Used
 - **Frontend:** HTML, CSS, JavaScript
-- **Backend:** [Specify backend technology, e.g., Node.js, Django]
-- **Database:** [Specify database, e.g., MySQL, MongoDB]
-- **APIs:** [List any APIs used, e.g., Google Maps API]
+- **Backend:** SNode.js, Django
+- **Database:**  MySQL, MongoDB
+- **APIs:**  Google Maps API
 
 ## Getting Started
 
 ### Prerequisites
 Ensure you have the following installed:
-- [List any prerequisites, e.g., Node.js, Python, MySQL]
+- Node.js, Python, MySQL
 
 ### Installation
 1. Clone the repository:
