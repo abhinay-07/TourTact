@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding:0;
+    background-size:cover;
+    background-position: center;
+    background-image: url('images/logo1.jpg');
+
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+  }
+  
+  .logo {
+    margin-left: 20px;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 20px;
+    border-radius: 10px;
+  }
+  
+  main h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  main p {font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  main ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main ul li {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+  }
+  
+  main ul li img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 10px;
+  }
+  
+  main h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  main p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+  }
+  
+  main blockquote {
+    margin: 20px 0;
+    padding: 20px;
+    border-left: 5px solid #ccc;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+  }
+  
+  main blockquote img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  main blockquote p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  main blockquote cite {
+    font-style: italic;
+    font-size: 1rem;
+  }
+  
+  footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }

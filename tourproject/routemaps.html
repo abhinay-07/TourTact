@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Route Maps</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <link rel="stylesheet" href="stylesroute.css">
+</head>
+<body>
+    <header>
+        <h1>Travel Company</h1>
+        <div class="logo">
+            <img src="images\logo.jpg" alt="TourTact logo">
+        </div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="suggestions.html">Give Suggestions</a>
+            <a href="routemaps.html">Route Maps</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Route Maps</h2>
+        <p>Here are some route maps for popular destinations:</p>
+        <ul>
+<li>
+                <h3>Paris, France</h3>
+                <div id="map-paris"></div>
+            </li>
+            <button><a href="payment.html">submit</a></button>
+            <li>
+                <h3>Tokyo, Japan</h3>
+                <div id="map-tokyo"></div>
+            </li>
+            <button><a href="payment.html">submit</a></button>
+            <li>
+                <h3>New York, USA</h3>
+                <div id="map-new-york"></div>
+            </li>
+        </ul>
+    </main>
+    <button><a href="payment.html">submit</a></button>
+</div>
+  <script>
+    // Paris map
+    var mapParis = L.map('map-paris').setView([48.8566, 2.3522], 12);
+    
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(mapParis);
+    
+    // Tokyo map
+    var mapTokyo = L.map('map-tokyo').setView([35.6895, 139.6917], 12);
+    
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(mapTokyo);
+    
+    // New York map
+    var mapNewYork = L.map('map-new-york').setView([40.7128, -74.0060], 12);
+    
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(mapNewYork);
+    
+      
+      const maps = {
+        paris: L.map('map-paris').setView([48.8566, 2.3522], 12),
+        tokyo: L.map('map-tokyo').setView([35.6895, 139.6917], 12),
+        'new-york': L.map('map-new-york').setView([40.7128, -74.0060], 12),
+      };
+      
+      // Add the OpenStreetMap tile layer to each map
+      Object.values(maps).forEach(map => {
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        }).addTo(map);
+      });
+      
+      // Add markers to the maps
+      const markers = {
+        paris: L.marker([48.8566, 2.3522]).addTo(maps.paris),
+        tokyo: L.marker([35.6895, 139.6917]).addTo(maps.tokyo),
+        'new-york': L.marker([40.7128, -74.0060]).addTo(maps['new-york']),
+      };
+      
+      // Add popup windows to the markers
+      Object.entries(markers).forEach(([city, marker]) => {
+        marker.bindPopup(`<h3>${city.charAt(0).toUpperCase() + city.slice(1)}</h3>`);
+      });
+</script>
+</body>
+</html>

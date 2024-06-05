@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Trips</title>
+    <link rel="stylesheet" href="stylesgroup.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>TourTact</h1>
+            <div class="options">
+                <a href="home.html">Home</a>
+                <a href="normal_travelling.html">Normal Travelling</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h2>Group Trips</h2>
+        <p>Plan your next group trip with TourTact and enjoy special discounts and benefits.</p>
+        <form>
+            <label for="group-size">Group Size:</label>
+            <input type="number" id="group-size" name="group-size" min="1" max="50" required>
+            <br>
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="destination" required>
+            <br>
+            <label for="start-date">Start Date:</label>
+            <input type="date" id="start-date" name="start-date" required>
+            <br>
+            <label for="end-date">End Date:</label>
+            <input type="date" id="end-date" name="end-date" required>
+            <br>
+            <label for="car-rental">Car Rental:</label>
+            <select id="car-rental" name="car-rental">
+                <option value="none">None</option>
+                <option value="minivan">Minivan</option>
+                <option value="bus">Bus</option>
+            </select>
+           <br><button type="submit">Get Route Suggestions</button>
+        </form>
+        <div id="map">
+            <div class="place">
+                <a href="routemaps.html" target="_blank">
+                    <img src="images\DUBAI.jpg" alt="Place 1">
+                </a>
+                <p>Place 1</p>
+            </div>
+            <div class="place">
+                <a href="routemaps.html" target="_blank">
+                    <img src="images\MALDIVES.jpg" alt="Place 2">
+                </a>
+                <p>Place 2</p>
+            </div>
+            <div class="place">
+                <a href="routemaps.html" target="_blank">
+                    <img src="images\BARCELONA.jpg" alt="Place 3">
+                </a>
+                <p>Place 3</p>
+            </div>
+            <div class="place">
+                <a href="routemaps.html" target="_blank">
+                    <img src="images\LONDON.jpg" alt="Place 4">
+                </a>
+                <p>Place 4</p>
+            </div>
+            <div class="place">
+                <a href="routemaps.html" target="_blank">
+                    <img src="images\PARIS.jpg" alt="Place 5">
+                </a>
+                <p>Place 5</p>
+            </div>
+        </div>
+        </div>
+        <br>
+        <br>
+        <h3>Hotel Suggestions</h3>
+        <ul id="hotel-suggestions"></ul>
+        <div id="map">
+            <div class="place">
+                <a href="routemaps.html" target="_blank">
+                    <img src="images\h1.jpg" alt="Hotel 1">
+                </a>
+                <p>Hotel 1</p>
+            </div>
+            <div class="place">
+                <a href="routemaps.html" target="_blank">
+                    <img src="images\h2.jpg" alt="Hotel 2">
+                </a>
+                <p>Hotel 2</p>
+            </div>
+            <div class="place">
+                <a href="routemaps.html" target="_blank">
+                    <img src="images\h3.jpg" alt="Hotel 3">
+                </a>
+                <p>Hotel 3</p>
+            </div>
+            <div class="place">
+                <a href="routemaps.html" target="_blank">
+                    <img src="images\h4.jpg" alt="Hotel 4">
+                </a>
+                <p>Place 4</p>
+            </div>
+            <div class="place">
+                <a href="routemaps.html" target="_blank">
+                    <img src="images\h5.jpg" alt="Hotel 5">
+                </a>
+                <p>Hotel 5</p>
+            </div>
+        </div>
+        </div>
+        <br>
+        <br>
+        <h3>Restaurant Suggestions</h3>
+        <ul id="restaurant-suggestions"></ul>
+        <div id="map">
+            <div class="place">
+                <a href="restaurent.html" target="_blank">
+                    <img src="images\R1.jpg" alt="Restaurant 1">
+                </a>
+                <p>Restaurant 1</p>
+            </div>
+            <div class="place">
+                <a href="restaurent.html" target="_blank">
+                    <img src="images\R2.jpg" alt="Restaurant 2">
+                </a>
+                <p>Restaurant 2</p>
+            </div>
+            <div class="place">
+                <a href="restaurent.html" target="_blank">
+                    <img src="images\R3.jpg" alt="Restaurant 3">
+                </a>
+                <p>Restaurant 3</p>
+            </div>
+            <div class="place">
+                <a href="restaurent.html" target="_blank">
+                    <img src="images\R4.jpg" alt="Restaurant 4">
+                </a>
+                <p>Restaurant 4</p>
+            </div>
+            <div class="place">
+                <a href="restaurent.html" target="_blank">
+                    <img src="images\R5.jpg" alt="Restaurant 5">
+                </a>
+                <p>Restaurant 5</p>
+            </div>
+        </div>
+        </div>
+    </main>
+    
+</body>
+</html>

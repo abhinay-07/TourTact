@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Give Suggestions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Travel Company</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="suggestions.html">Give Suggestions</a>
+            <a href="routemaps.html">Route Maps</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Give Suggestions</h2>
+        <form id="suggestionsForm">
+            <label for="numPeople">Number of People:</label>
+            <input type="number" id="numPeople" name="numPeople" min="1" required>
+            <br>
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="destination" required>
+            <br>
+            <label for="vehicle">Vehicle Type:</label>
+            <select id="vehicle" name="vehicle">
+                <option value="car">Car</option>
+                <option value="minivan">Minivan</option>
+                <option value="bus">Bus</option>
+            </select>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="suggestionsMessage"></div>
+    </main>
+    <footer>
+        <p>&copy; 2022 Travel Company. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('suggestionsForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+          
+            var numPeople = document.getElementById('numPeople').value;
+            var destination = document.getElementById('destination').value;
+            var vehicle = document.getElementById('vehicle').value;
+          
+            var suggestionsMessage = 'Based on your input, here are some trip suggestions:<ul><li>For ' + numPeople + ' people, we recommend renting a ' + vehicle + '.</li><li>We suggest visiting ' + destination + ' for a memorable trip.</li></ul>';
+          
+            document.getElementById('suggestionsMessage').innerHTML = suggestionsMessage;
+          });
+    </script>
+</body>
+</html>
