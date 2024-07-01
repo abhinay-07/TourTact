@@ -1,5 +1,5 @@
-# TourTuct - Comprehensive Tour and Travel Planning Platform
-Welcome to TourTuct, an innovative platform designed to offer users a seamless and personalized travel planning experience. Whether users are seeking adventure, relaxation, or cultural exploration, TourTuct simplifies the process of planning, booking, and managing trips by integrating all essential features into one comprehensive platform.
+# TourTact - Comprehensive Tour and Travel Planning Platform
+Welcome to TourTact, an innovative platform designed to offer users a seamless and personalized travel planning experience. Whether users are seeking adventure, relaxation, or cultural exploration, TourTuct simplifies the process of planning, booking, and managing trips by integrating all essential features into one comprehensive platform.
 
 ## Key Features
 
